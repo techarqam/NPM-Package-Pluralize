@@ -2,21 +2,32 @@
   "name": "friday",
   "version": "0.0.1",
   "description": "Automation in Development",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "mocha --reporter spec",
+    "create": "node scripts/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techarqam/NPM-Package-Pluralize.git"
   },
   "keywords": [
     "friday",
     "arqam"
   ],
-  "author": "Mohammed Arqam",
+  "bugs": {
+    "url": "https://github.com/techarqam/NPM-Package-Pluralize/issues"
+  },
+  "author": "Mohammed Arqam <techarqam@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "@types/pluralize": "0.0.29",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
     "typescript": "^3.5.3"
   },
   "dependencies": {
-    "pluralize": "^8.0.0"
+    "file-system": "^2.2.2"
   }
 }
