@@ -1,0 +1,22 @@
+{
+  "name": "friday",
+  "version": "0.0.1",
+  "description": "Automation in Development",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "friday",
+    "arqam"
+  ],
+  "author": "Mohammed Arqam",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/pluralize": "0.0.29",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "pluralize": "^8.0.0"
+  }
+}
